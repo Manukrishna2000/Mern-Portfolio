@@ -8,9 +8,11 @@ export const Experience = () => {
           Experience
         </div>
         <ul className="m-auto w-fit mt-6 text-white/55 text-[20px]">
-            <li className="list-disc text-[20px] font-bold">
-                1 year Experience as Mern Stack Developer at Softroniics Calicut
-                
+            
+            <li className="list-disc text-[20px] w-[100%] font-bold">
+               Mern Stack Developer -
+               SOFTRONIICS Calicut -
+               May 2023 to present                
             </li>
         
         </ul>

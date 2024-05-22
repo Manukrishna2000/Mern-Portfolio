@@ -2,7 +2,7 @@ import React from "react";
 import person from "./person.webp";
 
 
-const About = () => {
+const   About = () => {
   return (
     <>
       <div className="m-auto text-white/65 border-white/65 border-b-2 text-center text-[30px] w-[80%] pb-3 ">
