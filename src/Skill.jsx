@@ -13,28 +13,28 @@ const Skill = () => {
       <div  className="m-auto text-white/65 border-b-2 border-white/65   text-center text-[30px] w-[80%] pb-3 ">
         Skills
       </div>
-      <div className="flex text-white/65 mt-6 w-[40%]  m-auto  flex-wrap justify-between">
-        <div className="text-[100px]  pb-4 pr-24 text-center w-fit mt-2">
+      <div className="flex text-white/65 mt-6 w-[80%]  m-auto  flex-wrap justify-between">
+        <div className="text-[70px]   text-center w-fit mt-2">
           <FaReact />
           <div className="text-[20px]">React JS</div>
         </div>
-        <div className="text-[100px]  pb-4 pr-24 text-center w-fit mt-2">
+        <div className="text-[70px]   text-center w-fit mt-2">
           <IoLogoJavascript />
           <div className="text-[20px]">Java Script</div>
         </div>
-        <div className="text-[100px]  text-center w-fit mt-2">
+        <div className="text-[70px]  text-center w-fit mt-2">
           <FaHtml5 />
           <div className="text-[20px]">Html 5</div>
         </div>
-        <div className="text-[100px]    text-center w-fit mt-2">
+        <div className="text-[70px]    text-center w-fit mt-2">
           <SiTailwindcss />
           <div className="text-[20px]">Tailwind</div>
         </div>
-        <div className="text-[100px]   text-center w-fit mt-2">
+        <div className="text-[70px]   text-center w-fit mt-2">
           <FaNodeJs />
           <div className="text-[20px]">Node JS</div>
         </div>
-        <div className="text-[100px] text-center w-fit mt-2">
+        <div className="text-[70px] text-center w-fit mt-2">
           <SiMongodb />
           <div className="text-[20px]">Mongo Db</div>
         </div>
