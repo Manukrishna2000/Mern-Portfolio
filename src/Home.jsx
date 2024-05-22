@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Skill from "./Skill";
 import About from "./About";
 import { Experience } from "./Experience";
+import Education from "./Education";
 
 export const Home = () => {
   const [typedText, setTypedText] = useState("");
@@ -84,6 +85,9 @@ export const Home = () => {
         </div>
         <div className="h-[600px] ">
           <Experience />
+        </div>
+        <div className="h-[600px] ">
+          <Education />
         </div>
       </div>
     </>
