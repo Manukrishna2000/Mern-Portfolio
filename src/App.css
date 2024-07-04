@@ -10,7 +10,6 @@
 .background1{
   background-image: url(../src/lap2.jpg);
   background-size: cover;
-  min-height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,7 +18,6 @@
 .background2{
   background-image: url(../src/lap3.jpg);
   background-size: cover;
-  min-height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

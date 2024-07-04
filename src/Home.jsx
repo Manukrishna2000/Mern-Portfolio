@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaBars, FaTimes } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import person from "./person.webp";
+import person from "./file.png";
 import Projects from "./Projects";
 import Skill from "./Skill";
 import About from "./About";
@@ -10,6 +10,7 @@ import Education from "./Education";
 
 export const Home = () => {
   const [typedText, setTypedText] = useState("");
+  const [isNavVisible, setIsNavVisible] = useState(false);
 
   useEffect(() => {
     const text = "Manu Krishna A P";
@@ -25,47 +26,66 @@ export const Home = () => {
     }, 150); // Adjust typing speed here
   }, []);
 
+  const toggleNav = () => {
+    setIsNavVisible(!isNavVisible);
+  };
+
   return (
     <>
       <div className="background">
-        <div className="bg-black/35 h-[600px]">
-          <div className="fixed w-[100%] bg-black pt-3 flex items-center">
-            <div className="pl-20 text-[50px] font-mono">MK</div>
-            <div className="m-auto justify-center gap-10 flex shadow-2xl text-[15px] rounded-3xl">
+        <div className="bg-black/35 min-h-screen flex flex-col">
+          <div className="fixed w-full bg-black pt-3 flex items-center z-10">
+            <div className="pl-6 md:pl-20 text-3xl md:text-5xl font-mono">
+              MK
+            </div>
+            <div className="flex-grow flex justify-end pr-6 md:pr-20">
+              <button
+                className="text-white text-2xl md:text-3xl md:hidden"
+                onClick={toggleNav}
+              >
+                {isNavVisible ? <FaTimes /> : <FaBars />}
+              </button>
+            </div>
+            <div
+              className={`${
+                isNavVisible ? "flex" : "hidden"
+              } md:flex flex-col md:flex-row items-center gap-6 md:gap-10 text-lg md:text-base text-white/65 bg-black/75 md:bg-transparent p-5 md:p-0 absolute md:relative top-[80px] right-[20px] md:top-0 md:right-0 w-full md:w-auto`}
+            >
               <a href="#skill">
-                <button className="text-white/65 hover:text-white">
-                  Skill
-                </button>
+                <button className="hover:text-white">Skill</button>
               </a>
               <a href="#project">
-                <button className="text-white/65 hover:text-white">
-                  Projects
-                </button>
+                <button className="hover:text-white">Projects</button>
               </a>
-              <button className="text-white/65 hover:text-white">About</button>
-              <button className="text-white/65 hover:text-white">
-                Experience
-              </button>
+              <a href="#about">
+                <button className="hover:text-white">About</button>
+              </a>
+              <a href="#experience">
+                <button className="hover:text-white">Experience</button>
+              </a>
+              <a href="#education">
+                <button className="hover:text-white pr-4">Education</button>
+              </a>
             </div>
           </div>
 
-          <div className="flex pt-[180px] justify-center w-[100%] m-auto items-center p-20">
+          <div className="flex flex-col items-center justify-center flex-grow  px-6 md:px-20">
             <div>
-              <img 
+              {/* <img 
                 src={person}
-                className="w-[300px] h-[300px] rounded-lg hover:scale-105"
+                className="w-[300px] h-[300px] hover:scale-105"
                 alt=""
-              />
+              /> */}
             </div>
-            <div className="m-auto w-[60%] h-fit text-[40px] ">
-              <div className="text-white/65">{typedText}</div>
-              <div className="text-white/65 text-[20px]">
+            <div className="w-full md:w-[60%]  text-center">
+              <div className="text-white/65 text-4xl md:text-5xl">{typedText}</div>
+              <div className="text-white/65 text-base md:text-xl mt-4">
                 Experienced MERN stack developer specializing in building robust
                 web applications. Proficient in React.js, Node.js, Express.js, and
                 MongoDB. Passionate about crafting seamless user experiences and
                 solving complex problems. Let's build something amazing together!
               </div>
-              <div className="mt-2 flex gap-4 text-white/65">
+              <div className="mt-4 flex justify-center gap-4 text-white/65">
                 <FaLinkedin size={30} />
                 <FaGithub size={30} />
                 <SiGmail size={30} />
@@ -75,18 +95,20 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="h-[600px] bg-black/55">
-        <Projects />
-        <div className="h-[600px] mt-16">
+      <div className="bg-black/55 py-16">
+        <div id="project" className="pb-16">
+          <Projects />
+        </div>
+        <div id="skill" className="pb-16">
           <Skill />
         </div>
-        <div className="h-[500px] mt-16">
+        <div id="about" className="pb-16">
           <About />
         </div>
-        <div className="h-[600px] ">
+        <div id="experience" className="pb-16">
           <Experience />
         </div>
-        <div className="h-[600px] ">
+        <div id="education" className="pb-16">
           <Education />
         </div>
       </div>
