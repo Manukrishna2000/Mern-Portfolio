@@ -1,31 +1,40 @@
-import React from 'react'
+import React from 'react';
 
 const Education = () => {
   return (
     <div className="background2">
-    <div className="bg-black/65 h-[600px]">
-      <div className="m-auto text-white/65 border-white/65  text-center text-[30px] w-[80%] pb-3 ">
-        Education
-      </div>
-     
-        <div className='flex pl-24'>
-
-<div className='p-20 text-[20px] '>
-    Master Of Computer Applications <br />
-    AWH Engineering College - KTU University <br />
-    7.56 CGPA
-</div>
-      <div className='border-white h-[200px] border-r-2 w-fit  mt-8'>
-</div>
-<div className='p-20 text-[20px]'>
-    Bachelor Of Computer Applications <br />
-    UNIVERSITY OF CALICUT <br />
-    57.40 %
+      <div className="bg-black/65 py-16">
+        <div className="text-center text-white text-4xl font-semibold mb-12">
+          Education
+        </div>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-0">
+          <div className="flex-1 flex flex-col items-center text-center md:text-left px-6">
+            <div className="text-2xl md:text-3xl text-white font-medium mb-2">
+              Master Of Computer Applications
+            </div>
+            <div className="text-lg md:text-xl text-white/70">
+              AWH Engineering College - KTU University
+            </div>
+            <div className="text-lg md:text-xl text-white/70 mt-1">
+              7.56 CGPA
+            </div>
+          </div>
+          <div className="hidden md:block border-l border-white/30 h-[150px] mx-8"></div>
+          <div className="flex-1 flex flex-col items-center text-center md:text-left px-6">
+            <div className="text-2xl md:text-3xl text-white font-medium mb-2">
+              Bachelor Of Computer Applications
+            </div>
+            <div className="text-lg md:text-xl text-white/70">
+              UNIVERSITY OF CALICUT
+            </div>
+            <div className="text-lg md:text-xl text-white/70 mt-1">
+              57.40%
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;

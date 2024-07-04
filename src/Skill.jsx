@@ -1,14 +1,14 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
+import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5 } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { SiExpress, SiTailwindcss } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 const Skill = () => {
   return (
     <div className=" background1" id='skill'>
-<div className="bg-black/60 pt-20 h-[600px]">
+<div className="bg-black/60 pt-20 h-[500px]">
 
       <div  className="m-auto text-white/65 border-b-2 border-white/65   text-center text-[30px] w-[80%] pb-3 ">
         Skills
@@ -38,6 +38,18 @@ const Skill = () => {
           <SiMongodb />
           <div className="text-[20px]">Mongo Db</div>
         </div>
+        <div className="text-[70px] text-center w-fit mt-2">
+        <SiExpress />
+          <div className="text-[20px]">Express JS</div>
+        </div>
+        {/* <div className="text-[70px] text-center w-fit mt-2">
+        <IoLogoCss3 />
+
+          <div className="text-[20px]">Express JS</div>
+        </div> */}
+
+
+
       </div>
     </div>
 </div>

@@ -2,23 +2,28 @@ import React from "react";
 
 export const Experience = () => {
   return (
-    <div className="background2">
-      <div className="bg-black/65 h-[600px]">
-        <div className="m-auto text-white/65 border-white/65 border-b-2 text-center text-[30px] w-[80%] pb-3 ">
+    <div className="background2" id="experience">
+      <div className="py-16 bg-black/65">
+        <div className="text-center text-white text-4xl font-semibold mb-12">
           Experience
         </div>
-        <ul className="m-auto w-fit mt-6 text-white/55 text-[20px]">
-            
-            <li className="list-disc text-[20px] w-[100%] font-bold">
-               Mern Stack Developer -
-               SOFTRONIICS Calicut -
-               May 2023 to present                
+        <div className="max-w-4xl mx-auto">
+          <ul className="text-white/70 text-lg md:text-xl mb-8">
+            <li className="list-disc font-bold mb-4">
+              Mern Stack Developer - SOFTRONIICS Calicut - May 2023 to present
             </li>
-        
-        </ul>
-        <div className="w-[45%] text-justify m-auto  pt-4 text-white/65">
-               &nbsp;&nbsp; In the past year, I've specialized in MERN stack development, utilizing MongoDB, Express.js, React.js, and Node.js to build modern web applications. From crafting flexible data schemas in MongoDB to creating responsive user interfaces with React.js, and optimizing server-side logic with Node.js, I've gained hands-on experience in all facets of the stack. My focus on best practices ensures scalability, maintainability, and exceptional user experiences in the applications I develop.
-                </div>
+          </ul>
+          <div className="text-white/70 text-base md:text-lg leading-relaxed">
+            In the past year, I've specialized in MERN stack development,
+            utilizing MongoDB, Express.js, React.js, and Node.js to build modern
+            web applications. From crafting flexible data schemas in MongoDB to
+            creating responsive user interfaces with React.js, and optimizing
+            server-side logic with Node.js, I've gained hands-on experience in
+            all facets of the stack. My focus on best practices ensures
+            scalability, maintainability, and exceptional user experiences in
+            the applications I develop.
+          </div>
+        </div>
       </div>
     </div>
   );
