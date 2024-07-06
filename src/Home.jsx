@@ -86,9 +86,16 @@ export const Home = () => {
                 solving complex problems. Let's build something amazing together!
               </div>
               <div className="mt-4 flex justify-center gap-4 text-white/65">
-                <FaLinkedin size={30} />
+                <a href="www.linkedin.com/in/ manu-krishna-13b431197" target="_blank">
+                  <FaLinkedin size={30} />
+                  </a>
+                <a href="https://github.com/Manukrishna2000
+" target="_blank">
                 <FaGithub size={30} />
+                </a>
+                {/* <a href="manukrishnaap@gmail.com" target="_blank">
                 <SiGmail size={30} />
+                </a> */}
               </div>
             </div>
           </div>

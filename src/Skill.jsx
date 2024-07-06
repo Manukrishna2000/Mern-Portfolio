@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact } from "react-icons/fa";
+import { FaBootstrap, FaFigma, FaReact } from "react-icons/fa";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5 } from "react-icons/fa";
 import { SiExpress, SiTailwindcss } from "react-icons/si";
@@ -13,7 +13,7 @@ const Skill = () => {
       <div  className="m-auto text-white/65 border-b-2 border-white/65   text-center text-[30px] w-[80%] pb-3 ">
         Skills
       </div>
-      <div className="flex text-white/65 mt-6 w-[80%]  m-auto  flex-wrap justify-between">
+      <div className="flex gap-2 text-white/65 mt-6 w-[80%]  m-auto  flex-wrap justify-between">
         <div className="text-[70px]   text-center w-fit mt-2">
           <FaReact />
           <div className="text-[20px]">React JS</div>
@@ -41,6 +41,22 @@ const Skill = () => {
         <div className="text-[70px] text-center w-fit mt-2">
         <SiExpress />
           <div className="text-[20px]">Express JS</div>
+        </div>
+        <div className="text-[70px] text-center w-fit mt-2">
+        <IoLogoCss3 />
+
+          <div className="text-[20px]">Css</div>
+        </div>
+        <div className="text-[70px] text-center w-fit mt-2">
+        <FaBootstrap />
+
+          <div className="text-[20px]">Bootstrap</div>
+        </div>
+        <div className="text-[70px] text-center w-fit mt-2">
+        <FaFigma />
+
+
+          <div className="text-[20px]">Figma</div>
         </div>
         {/* <div className="text-[70px] text-center w-fit mt-2">
         <IoLogoCss3 />
